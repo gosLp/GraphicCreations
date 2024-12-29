@@ -1,11 +1,59 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+interface Frontmatter {
+  title: string;
+  image: string;
+  description: string;
+}
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+interface PortfolioItem {
+  frontmatter: Frontmatter;
+  url: string;
+}
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import PortfolioCard from '../components/PortfolioCard.astro';
+import Footer from '../components/Footer.astro';
+
+// Astro.glob() is type-safe and loads all content at build time
+const portfolioItems = await Astro.glob('../content/portfolio/*.md');
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home">
+	<Header />
+	<main>
+		<section class="Hero">
+			<h1> Creative Design Solutions</h1>
+			<p>Sepcialising in Menus, calenders and magazine design</p>
+		</section>
+
+		<section class="portfolio">
+			<h2>Portfolio</h2>
+			<div class = "portfolio-grid">
+				{portfolioItems.map((item) => {
+					<PortfolioCard
+						title={item.frontmatter.title}
+						description={item.frontmatter.description}
+						image={item.frontmatter.image}
+					/>
+				})}
+			</div>
+		</section>
+	</main>
+	<Footer />
+	<style>
+		.hero {
+		  padding: 4rem 2rem;
+		  text-align: center;
+		  background: #f5f5f5;
+		}
+		
+		.portfolio-grid {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		  gap: 2rem;
+		  padding: 2rem;
+		}
+	  </style>
+	<!-- <Welcome /> -->
 </Layout>
