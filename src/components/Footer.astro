@@ -1,0 +1,37 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4">Design Studio</h3>
+        <p class="text-gray-400">Creating beautiful designs for print and digital media.</p>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contact</h3>
+        <ul class="text-gray-400">
+          <li class="mb-2">Email: contact@designstudio.com</li>
+          <li class="mb-2">Phone: (123) 456-7890</li>
+          <li>Location: City, Country</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="text-xl font-bold mb-4">Services</h3>
+        <ul class="text-gray-400">
+          <li class="mb-2">Magazine Design</li>
+          <li class="mb-2">Menu Design</li>
+          <li>Calendar Design</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+      <p>&copy; {currentYear} Design Studio. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
