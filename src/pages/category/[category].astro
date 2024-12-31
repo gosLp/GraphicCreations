@@ -1,0 +1,76 @@
+---
+// src/pages/category/[category].astro
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+    const portfolioEntries = await getCollection('portfolio');
+    const categories = [...new Set(portfolioEntries.map(entry => entry.data.category))];
+    
+    return categories.map(category => ({
+        params: { category },
+        props: { 
+            entries: portfolioEntries.filter(entry => entry.data.category === category)
+        }
+    }));
+}
+
+const { category } = Astro.params;
+const { entries } = Astro.props;
+---
+
+<Layout title={`${category} - Design Studio`}>
+    <Header />
+    <main class="pt-24">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-12 slide-in">
+                {category.charAt(0).toUpperCase() + category.slice(1)} Projects
+            </h1>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {entries.map((entry, index) => (
+                    <a 
+                        href={`/portfolio/${entry.slug}`}
+                        class="group block portfolio-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 slide-in"
+                        style={`animation-delay: ${index * 100}ms`}
+                    >
+                        <div class="relative h-64 overflow-hidden">
+                            <img 
+                                src={entry.data.mainImage}
+                                alt={entry.data.title}
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold group-hover:text-indigo-600 transition duration-300">
+                                {entry.data.title}
+                            </h3>
+                            <p class="text-gray-600 mt-2">{entry.data.description}</p>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </main>
+    <Footer />
+</Layout>
+
+<style>
+    .slide-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .slide-in-active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<script>
+    import { setupAnimation } from '../../scripts/animate';
+    setupAnimation();
+</script>

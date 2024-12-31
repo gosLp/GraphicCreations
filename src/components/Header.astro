@@ -1,14 +1,19 @@
 ---
 // src/components/Header.astro
+import { getCollection } from "astro:content";
+
+// get all unique categories
+const portfolioEntries = await getCollection("portfolio");
+const categories = [...new Set(portfolioEntries.map((entry)=> entry.data.category))];
 ---
 <header class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
     <div class="container mx-auto px-4">
       <nav class="flex items-center justify-between h-16">
-        <a href="/" class="text-xl font-bold text-gray-800">Design Studio</a>
+        <a href="/" class="text-xl font-bold text-gray-800">Graphic Creations</a>
         
         <div class="hidden md:flex space-x-8">
           <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
-          <a href="#portfolio" class="text-gray-600 hover:text-gray-900">Portfolio</a>
+          <a href="#featured" class="text-gray-600 hover:text-gray-900">Featured</a>
           <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
           <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
         </div>
@@ -21,3 +26,24 @@
       </nav>
     </div>
 </header>
+
+<style>
+  nav a {
+    position: relative;
+  }
+
+  nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  nav a:hover::after {
+    width: 100%;
+  }
+</style>

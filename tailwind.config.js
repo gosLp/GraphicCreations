@@ -2,6 +2,7 @@
 export default {
   content: ["./src/**/*.{astro,js,jsx,ts,tsx,svelte}"],
   plugins: [
+    require('@tailwindcss/typography'),
   ],
   theme: {
     extend: {},
