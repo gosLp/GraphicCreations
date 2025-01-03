@@ -11,6 +11,7 @@ export const collections = {
             category: z.enum(["magazine", "menus", "calenders"]),
             mainImage: z.string(),
             additionalImages: z.array(z.string()).optional(),
+            pdfUrl: z.string().optional(),
             featured: z.boolean().default(false),
             publishDate: z.date(),
         })
