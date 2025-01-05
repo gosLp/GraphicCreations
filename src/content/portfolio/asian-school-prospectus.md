@@ -2,12 +2,13 @@
 title: "The Asian School Brochure Design"
 description: "A comprehensive school brochure showcasing academic excellence and student life"
 client: "The Asian School"
-category: "magazine"
+category: "prospectus"
 mainImage: "/images/asian-school-prospectus/asian-school-cover.png"
-additionalImages: [
-  "/images/asian-school-prospectus/asian-school-spread1.png",
-  "/images/asian-school-prospectus/asian-school-spread2.png",
-]
+additionalImages:
+  [
+    "/images/asian-school-prospectus/asian-school-spread1.png",
+    "/images/asian-school-prospectus/asian-school-spread2.png",
+  ]
 pdfUrl: "/pdfs/asian-school-prospectus.pdf"
 publishDate: 2024-01-25
 featured: true
@@ -38,10 +39,10 @@ A vibrant and engaging brochure design highlighting the school's philosophy of "
 - Admission Information
 
 ![Cover Page](/images/asian-school-prospectus/asian-school-cover.png)
-*The striking cover design emphasizes the school's commitment to excellence*
+_The striking cover design emphasizes the school's commitment to excellence_
 
 ![Philosophy Spread](/images/asian-school-prospectus/asian-school-spread1.png)
-*Educational philosophy presented with clear visual hierarchy*
+_Educational philosophy presented with clear visual hierarchy_
 
 ![Activities Spread](/images/asian-school-prospectus/asian-school-spread2.png)
-*Dynamic layout showcasing student activities and achievements*
+_Dynamic layout showcasing student activities and achievements_
