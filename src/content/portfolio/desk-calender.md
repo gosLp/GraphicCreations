@@ -2,12 +2,10 @@
 title: "Doon Group of Colleges Calendar 2025"
 description: "A vibrant academic calendar design showcasing institutional excellence and student life"
 client: "Doon Group of Colleges"
-category: "calenders"
+category: "calender"
 mainImage: "/images/doon-calendar/cover-jan.png"
-additionalImages: [
-  "/images/doon-calendar/variant1.png",
-  "/images/doon-calendar/variant2.png",
-]
+additionalImages:
+  ["/images/doon-calendar/variant1.png", "/images/doon-calendar/variant2.png"]
 pdfUrl: "/pdfs/doon-calendar-2025.pdf"
 publishDate: 2024-12-20
 featured: true
@@ -27,38 +25,14 @@ A dynamic desk calendar design celebrating 26 years of academic excellence at Do
 - Professional corporate styling
 - Consistent branding elements
 
-## Featured Content
-
-- Monthly calendar layouts
-- Institutional achievements
-- Course offerings
-- ISO 9001:2008 certification highlights
-- Award recognition displays
-
-## Calendar Features
-
-- Comprehensive course listings
-- Academic program highlights
-- Monthly date grid layouts
-- Previous and next month previews
-- Special date markings
-
-## Technical Specifications
-
-- Desk calendar format
-- 12 monthly spreads
-- High-quality photography
-- Professional print finish
-- Dual-language elements
-
 ![January Cover](/images/doon-calendar/cover-jan.png)
-*January 2025 featuring the main campus and professional students*
+_January 2025 featuring the main campus and professional students_
 
 ![Academic Programs](/images/doon-calendar/variant1.png)
-*Comprehensive display of academic offerings and facilities*
+_Comprehensive display of academic offerings and facilities_
 
 ![Student Life](/images/doon-calendar/variant2.png)
-*Dynamic portrayal of campus activities and student achievements*
+_Dynamic portrayal of campus activities and student achievements_
 
 ## Notable Features
 

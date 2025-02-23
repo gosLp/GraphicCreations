@@ -2,7 +2,7 @@
 title: "The Asian School Brochure Design"
 description: "A comprehensive school brochure showcasing academic excellence and student life"
 client: "The Asian School"
-category: "prospectus"
+category: "brochure"
 mainImage: "/images/asian-school-prospectus/asian-school-cover.png"
 additionalImages:
   [

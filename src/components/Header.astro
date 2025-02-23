@@ -26,6 +26,13 @@ const categories = [...new Set(portfolioEntries.map((entry)=> entry.data.categor
       </nav>
     </div>
 </header>
+<script>
+  document.querySelector('a[href="#contact"]')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    const portfolioSection = document.getElementById('contact');
+    portfolioSection?.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
 
 <style>
   nav a {

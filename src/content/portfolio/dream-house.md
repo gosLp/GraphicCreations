@@ -2,10 +2,10 @@
 title: "Dream House Café & Restro Menu Design"
 description: "A modern menu design for Dream House Café featuring extensive food and beverage offerings"
 client: "Dream House Café & Restro"
-category: "menus"
+category: "menu"
 mainImage: "/images/dream-house/menu-cover.png"
 additionalImages: [
-  "/images/dream-house/food-spread.png",
+  # "/images/dream-house/food-spread.png",
 #   "/images/dream-house/beverages.png"
 ]
 pdfUrl: "/pdfs/dream-house-menu.pdf"
@@ -27,29 +27,11 @@ A contemporary menu design showcasing the restaurant's diverse offerings from mo
 - Category-based organization
 - Brand identity integration
 
-## Menu Categories
-
-- Momos (Steam, Fried, Tandoori varieties)
-- Pasta & Continental
-- Noodles & Rice
-- Sandwiches & Burgers
-- Beverages & Mocktails
-- Desserts
-- Specialty Items
-
-## Key Features
-
-- Comprehensive vegetarian and non-vegetarian options
-- Premium presentation of signature dishes
-- Clear pricing and portion information
-- Special notes and add-ons clearly marked
-- Attractive food styling and photography
-
 ![Menu Cover](/images/dream-house/menu-cover.png)
-*The striking cover design featuring the café's logo and brand elements*
+_The striking cover design featuring the café's logo and brand elements_
 
 ![Food Items](/images/dream-house/menu-items.png)
-*Appetizing presentation of key menu items*
+_Appetizing presentation of key menu items_
 
 <!-- ![Beverage Section](/images/dream-house/beverages.png)
 *Diverse selection of beverages and mocktails* -->
