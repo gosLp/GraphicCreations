@@ -4,11 +4,12 @@ description: "Annual school magazine highlighting academic and co-curricular ach
 client: "St. Mary's Academy"
 category: "magazine"
 mainImage: "/images/st-marys/marian-cover.png"
-additionalImages: [
-  "/images/st-marys/spread1.png",
-  "/images/st-marys/spread2.png",
-  "/images/st-marys/spread3.png"
-]
+additionalImages:
+  [
+    "/images/st-marys/spread1.png",
+    "/images/st-marys/spread2.png",
+    "/images/st-marys/spread3.png",
+  ]
 pdfUrl: "/pdfs/st-marys-academy.pdf"
 publishDate: 2016-08-01
 featured: true
@@ -20,35 +21,11 @@ The annual magazine of St. Mary's Academy, Meerut Cantt, showcasing the school's
 
 [View Complete Magazine (PDF)](/pdfs/st-marys-academy.pdf)
 
-## Design Elements
-
-- Elegant brown and green color schemes
-- School crest and shamrock motif integration
-- Professional photography of school activities
-- Dynamic geometric pattern backgrounds
-- Consistent branding throughout
-
-## Publication Features
-
-- School motto "Rectis Corde Laetitia" prominently featured
-- Integration of religious and academic imagery
-- Professional photography of student activities
-- Varied cover designs showing different aspects of school life
-- High-quality print production
-
-## Special Highlights
-
-- Patrician Brothers' School heritage
-- Academic excellence showcase
-- Student achievements
-- School activities and events
-- Cultural performances
-
 ![Front Cover](/images/st-marys/spread3.png)
-*The elegant cover design featuring the school's motto and crest*
+_The elegant cover design featuring the school's motto and crest_
 
 ![Student Activities](/images/st-marys/spread1.png)
-*Dynamic presentation of student activities and achievements*
+_Dynamic presentation of student activities and achievements_
 
 ![School Events](/images/st-marys/spread2.png)
-*Coverage of major school events and ceremonies*
+_Coverage of major school events and ceremonies_

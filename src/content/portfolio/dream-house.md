@@ -19,14 +19,6 @@ A contemporary menu design showcasing the restaurant's diverse offerings from mo
 
 [View Complete Menu (PDF)](/pdfs/dream-house.pdf)
 
-## Design Elements
-
-- Clean, modern layout with striking blue accent elements
-- High-quality food photography
-- Clear pricing structure
-- Category-based organization
-- Brand identity integration
-
 ![Menu Cover](/images/dream-house/menu-cover.png)
 _The striking cover design featuring the café's logo and brand elements_
 

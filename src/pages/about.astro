@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+---
+<Layout title="Design Studio - Creative Portfolio">
+    <Header/>
+<section id="about" class="py-24 bg-gradient-to-br from-fuchsia-700 via-fuchsia-600 to-fuchsia-800">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto text-white space-y-8">
+        <h2 class="text-5xl font-bold text-center mb-12">About Us</h2>
+        
+        <p class="text-xl leading-relaxed">
+          With over 15 years of experience, Graphic Creations is a leading designing and printing company based in Dehradun. We have built a strong reputation for delivering high-quality, tailored solutions that meet the unique needs of our clients.
+        </p>
+        
+        <p class="text-xl leading-relaxed">
+          Our expertise spans a range of services, including designing and printing annual magazines, prospectuses, brochures, calendars, report cards, and newsletters. Each project reflects our dedication to creativity, precision, and excellence.
+        </p>
+        
+        <p class="text-xl leading-relaxed">
+          We have had the privilege of collaborating with esteemed institutions such as St. Joseph's Academy, St. Patrick's Academy, The Asian School, Carman School, Pine Hall, and Doon Blossom, among others.
+        </p>
+        
+        <p class="text-xl leading-relaxed italic text-center">
+          Explore our portfolio to discover how we bring ideas to life.
+        </p>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</Layout>
+  
+  <script>
+    // Smooth scroll for About link in header
+    document.querySelector('a[href="#about"]')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const aboutSection = document.getElementById('about');
+      aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+  
+  <style>
+    /* Add subtle text animation on scroll */
+    p {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+  
+    p.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  
+  <script>
+    // Intersection Observer for text animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    document.querySelectorAll('#about p').forEach((p) => {
+      observer.observe(p);
+    });
+  </script>

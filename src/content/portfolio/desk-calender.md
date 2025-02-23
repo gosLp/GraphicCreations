@@ -17,14 +17,6 @@ A dynamic desk calendar design celebrating 26 years of academic excellence at Do
 
 <!-- [View Complete Calendar (PDF)](/pdfs/doon-calendar-2025.pdf) -->
 
-## Design Elements
-
-- Bold typography highlighting "26 Years of Excellence"
-- Dynamic color schemes varying by month (purple, coral, blue themes)
-- Integration of student life photography
-- Professional corporate styling
-- Consistent branding elements
-
 ![January Cover](/images/doon-calendar/cover-jan.png)
 _January 2025 featuring the main campus and professional students_
 
@@ -33,11 +25,3 @@ _Comprehensive display of academic offerings and facilities_
 
 ![Student Life](/images/doon-calendar/variant2.png)
 _Dynamic portrayal of campus activities and student achievements_
-
-## Notable Features
-
-- Highlights Doon Group's status as "North India's Best & Oldest"
-- Showcases various academic programs including Agriculture & Paramedical courses
-- Features award recognition from government ministers
-- Includes motivational messaging "Success is closer than you think"
-- Displays comprehensive course listings including B.Sc., MBA, BCA, and more
